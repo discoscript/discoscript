@@ -1,8 +1,8 @@
-const WebScoket = require("ws")
+const WebSocket = require("ws")
 
 const Dscript = {}
 
-Dscript.Client = new function() {
-
+Dscript.Client = function(id) {
+    
 }
 module.exports = Dscript
