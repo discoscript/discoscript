@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
+    "denky-db": "^1.0.6",
     "ws": "^7.4.5"
   }
 }

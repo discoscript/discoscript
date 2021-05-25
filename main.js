@@ -1,7 +1,7 @@
-const WebSocket = require("ws")
+const Client = require("./lib/Client");
 const Dscript = {}
 
-Dscript.Client = function(id) {
+Dscript.Login = function(token) {
     
 }
 module.exports = Dscript
