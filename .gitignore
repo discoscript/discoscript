@@ -1,4 +1,6 @@
 # NPM FILES
 /node_modules
-/package-lock.json
+/package-lock.json.
+# CONFIDENCIAL
 lib/database.json
+tests/config/config.js

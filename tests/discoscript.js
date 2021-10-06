@@ -1,13 +1,15 @@
-const discr = require('../lib');
+const { token } = require('./config/config')
+const discr = require('../main');
 
-const bot = new discr.Client({
+const bot = new discr.CommandClient({
     debug: false,
     disabledEvents: ['PRESENCE_UPDATE'],
     prefix: '!',
+    commandDir: 'tests/cmds'
 })
 
 bot.on('ready', async () => {
-    console.log('Bot ready!');
+    console.log(`[READY] ${bot.user.username} ready!`);
 })
 
-bot.run('MTdqrd0vGDV1dcF0QPjom6OB.NQxUhj.I4JjFHIympR3mVF3UiUbbD5VVbi'); // INVALID TOKEN
+bot.run(token);
