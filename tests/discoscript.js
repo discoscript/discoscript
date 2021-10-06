@@ -1,15 +1,18 @@
 const { token } = require('./config/config')
-const discr = require('../main');
+const disco = require('../main');
 
-const bot = new discr.CommandClient({
+const bot = new disco.CommandClient({
     debug: false,
-    disabledEvents: ['PRESENCE_UPDATE'],
     prefix: '!',
-    commandDir: 'tests/cmds'
+    commandDir: 'cmds'
 })
 
 bot.on('ready', async () => {
     console.log(`[READY] ${bot.user.username} ready!`);
-})
+});
+
+bot.on('message', async (message) => {
+    console.log(message);
+});
 
 bot.run(token);
