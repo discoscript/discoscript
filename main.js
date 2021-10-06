@@ -1,7 +1,3 @@
-const Client = require("./lib/Client");
-const Dscript = {}
+const disco = require('./lib/index');
 
-Dscript.Login = function(token) {
-    
-}
-module.exports = Dscript
+module.exports = disco;
